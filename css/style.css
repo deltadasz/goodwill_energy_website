@@ -125,6 +125,7 @@
 
 .panouri {
     box-shadow: 0 2.4rem 4.8rem rgba(0,0,0, 0.075);
+    background-color: #ebf4ec;
     border-radius: 11px;
     overflow: hidden;
     padding: 4.6rem;
@@ -145,4 +146,10 @@
 .card-img {
     width: 35%;
     padding-bottom: 2rem;
+}
+
+/* Sectiunea de form*/
+
+.section-form {
+    padding: 9.6rem;
 }
