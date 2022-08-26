@@ -124,12 +124,37 @@
         <div class="container">
             <span class="subheading">Lorem ipsum dolor sit amet.</span>
             <h2 class="heading-secondary">Calculator</h2>
-            <div class="container grid grid--2-cols grid--center-v">
-                <form>
-                    <label for="fname">First name:</label><br>
-                    <input type="text" id="fname" name="fname" value="John"><br>
-                    <label for="lname">Last name:</label><br>
-                    <input type="text" id="lname" name="lname" value="Doe">
+            <div class="container grid grid--3-cols grid--center-v">
+                <form class="formular">
+                    <label for="fname">Nume:</label><br>
+                    <input form="text" id="nume" name="nume" placeholder="Radu" required> <br><br>
+                    <label for="phone">Numar de telefon:</label><br>
+                    <input type="tel" id="phone" name="phone" required>
+                  </form>
+                  <form class="formular">
+                    <label for="fname">Prenume:</label><br>
+                    <input form="text" id="prenume" name="Prenume" placeholder="Andrei" required><br><br>
+                    <label for="alege-judetul">Alege judetul:</label><br>
+                    <input list="judet" id="alege-judetul" name="alege-judetul" />
+                    <datalist id="judet">
+                        <option value="Alba">
+                        <option value="Arad">
+                        <option value="Argeș">
+                        <option value="Bacău">
+                        <option value="Bihor">
+                        <option value="Bistrița-Năsăud">
+                        <option value="Botoșani">
+                        <option value="Brașov">
+                        <option value="Brăila">
+                        <option value="București">
+                    </datalist>
+
+                    </form>
+                
+                  <form class="formular">
+                    <label for="email">Adaugă adresa ta de email:</label><br>
+                    <input type="email" id="email" pattern=".+@globex\.com" required>
+             
                   </form>
         </div>  
     </section>
