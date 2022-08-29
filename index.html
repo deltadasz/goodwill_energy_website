@@ -120,44 +120,76 @@
        </div>
     </section>
     <!--Sectiunea de form -->
-    <section class="section-form">
+    <section class="section-cta">
         <div class="container">
-            <span class="subheading">Lorem ipsum dolor sit amet.</span>
-            <h2 class="heading-secondary">Calculator</h2>
-            <div class="container grid grid--3-cols grid--center-v">
-                <form class="formular">
-                    <label for="fname">Nume:</label><br>
-                    <input form="text" id="nume" name="nume" placeholder="Radu" required> <br><br>
-                    <label for="phone">Numar de telefon:</label><br>
-                    <input type="tel" id="phone" name="phone" required>
-                  </form>
-                  <form class="formular">
-                    <label for="fname">Prenume:</label><br>
-                    <input form="text" id="prenume" name="Prenume" placeholder="Andrei" required><br><br>
-                    <label for="alege-judetul">Alege judetul:</label><br>
-                    <input list="judet" id="alege-judetul" name="alege-judetul" />
-                    <datalist id="judet">
-                        <option value="Alba">
-                        <option value="Arad">
-                        <option value="Argeș">
-                        <option value="Bacău">
-                        <option value="Bihor">
-                        <option value="Bistrița-Năsăud">
-                        <option value="Botoșani">
-                        <option value="Brașov">
-                        <option value="Brăila">
-                        <option value="București">
-                    </datalist>
+            <h2 class="heading-secondary">Trimite-ne consumul tău</h2>
+            <div class="cta">
+            <div class="cta-text-box">
+                <h2 class="heading-secondary">Lorem ipsum dolor sit amet.</h2>
+                <p class="cta-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu porttitor odio. Phasellus eget molestie augue, sed imperdiet tellus. Donec egestas enim ex, sit amet rutrum purus sodales eget. Nulla.
+                </p>
+                <form class="cta-form">
+                    <div>
+                    <label for="nume">Numele dumneavoastră:</label>
+                    <input id="nume" type="text" placeholder="Nume și Prenume" required/>
+                    </div>
 
-                    </form>
-                
-                  <form class="formular">
-                    <label for="email">Adaugă adresa ta de email:</label><br>
-                    <input type="email" id="email" pattern=".+@globex\.com" required>
-             
-                  </form>
-        </div>  
+                    <div>
+                        <label for="email">Email:</label>
+                        <input id="email" type="email" placeholder="@email.com" required/>
+                    </div>
+
+                    <div>
+                        <label for="telefon">Număr de telefon:</label>
+                        <input id="telefon" type="tel" placeholder="+40" required/>
+                    </div>
+
+                    <div>
+                        <label for="cui">Precizați CUI-ul firmei (dacă este cazul):</label>
+                        <input id="cui" type="text" placeholder="RO23580128" maxlength="10" size="10" required/>
+                    </div>
+
+                <div>
+                    <label for="judet">Selectează județul:</label>
+                    <select aria-label="judet" id="select-where">
+                        <option>Bucureşti</option>
+                        <option>Alba</option>
+                        <option>Arad</option>
+                        <option>Arges</option>
+                        <option>Bacău</option>
+                        <option>Bihor</option>
+                        <option>Bistriţa-Năsăud	</option>
+                        <option>Botoşani</option>
+                        <option>Braşov</option>
+                    </select>
+                    </div>
+
+                    <div>
+                        <label for="localitate">Localitatea:</label>
+                        <input id="localitate" type="text" placeholder="Cluj-Napoca" required>
+                    </div>
+
+                    <div>
+                        <label for="consum-energie">Consumul de energie pe an (kWh)</label>
+                        <input id="consum-energie" type="number" placeholder="100000kWh" required/>
+                    </div>
+
+                    <div>
+                        <label for="marimea-sistemului">Mărimea sistemului de care aveți nevoie:</label>
+                        <p class="output" id="marimea-sistemului" type="number" placeholder="Rezultatul:">kWp</p>
+                    </div>
+
+                    <button class="btn btn--form" id="btn1">Calculează</button>
+                    <button class="btn btn--form">Trimite</button>
+                </form>
+            </div>
+            <div class="cta-image-box" role="img" aria-label="solar panel photo"></div>
+        </div>
+        </div>
     </section>
+   
 </main>
+<script src="./js/calculator.js"></script>
 </body>
 </html>

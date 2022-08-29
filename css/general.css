@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+*:focus {
+    outline: none;
+    
+}
+
+
 html {
     font-size: 62.5%;
 }
@@ -85,7 +91,8 @@ body {
     
 }
 
-.btn:link, .btn:visited {
+
+.btn, .btn:link, .btn:visited {
     display: inline-block;
     background-color: #398D43;
     color: #fff;
@@ -95,11 +102,19 @@ body {
     border-radius:11px;
     text-decoration: none;
     transition: all 300ms;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
 }
 
 .btn:hover, .btn:active {
     background-color: #fff;
     color: #398D43;
     box-shadow:inset 0 0 0 2px #398D43;
+}
+
+.btn--form {
+    align-self: end;
+    padding: 1.2rem;
 }
 
