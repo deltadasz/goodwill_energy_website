@@ -75,6 +75,24 @@
     color:#398D43;
 }
 
+/* Sticky navigation */
+
+.sticky .header {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.904);
+    z-index: 99999;
+    height: 7.6rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.sticky .section-hero {
+    margin-top: 7.6rem;
+}
 
 
 /* Hero component  */

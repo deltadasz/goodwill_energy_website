@@ -106,6 +106,7 @@
 
   .btn-mobile-nav {
     display: block;
+    z-index: 99999;
   }
 
   .main-nav {
@@ -136,7 +137,7 @@
     display: block;
   }
 
-  .icon-mobile-nav[name="menu-outline"] {
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
     display: none;
  }
 
@@ -159,6 +160,11 @@
 /* Below 704px*/
 
 @media (max-width: 44em) {
+
+    html {
+        font-size: 40%;
+    }
+
     .grid--3-cols, .grid--4-cols {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -191,6 +197,7 @@
 
     .grid--footer {
         grid-template-columns: repeat(6, 1fr);
+        row-gap: 1rem;
     }
 
     .logo-col, .adress-col {
@@ -201,6 +208,7 @@
         grid-row: 1;
         grid-column: span 2;
         margin-bottom: 3.2rem;
+      
     }
 
     .imagine-despre-noi {
@@ -243,6 +251,10 @@
     }
     .step-img-box:nth-child(10) {
         grid-row: 9;
+    }
+
+    .cta-text-box {
+        padding: 3rem 4rem;
     }
 
    
