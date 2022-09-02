@@ -133,6 +133,10 @@
     transform: translateX(0);
   }
 
+  .nav-close .main-nav {
+    visibility: hidden;
+  }
+
   .nav-open .icon-mobile-nav[name="close-outline"]  {
     display: block;
   }
@@ -257,5 +261,7 @@
         padding: 3rem 4rem;
     }
 
-   
+    .panouri3 {
+      width: 100%;
+    }
 }

@@ -7,6 +7,10 @@ btnNavEl.addEventListener('click', function() {
     headerEl.classList.toggle('nav-open');
 });
 
+
+// Make menu close after click
+ 
+
 // Sticky navigation //
 
 const sectionHeroEl = document.querySelector('.section-hero');
@@ -23,7 +27,7 @@ const obs = new IntersectionObserver(function(entries){
 },
 {
     root: null,
-    threshold: 0,
+    threshold: 1,
     rootMargin:'76px'
 }
 );
