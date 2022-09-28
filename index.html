@@ -44,7 +44,7 @@
             <p class="hero-description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non magna risus. Phasellus condimentum nisi nulla, eu posuere nisl bibendum eu. Integer hendrerit sagittis mauris at auctor. Sed luctus nisl bibendum ex porta, aliquet fringilla leo cursus. Maecenas et malesuada dolor, ut dapibus ex. 
             </p>
-            <a href="#" class="btn">Solicită consultanță gratuită!</a>
+            <a href="#calculator" class="btn">Solicită consultanță gratuită!</a>
         </div>
         <div class="hero-img-box">
             <img src="img/hero_image.png" alt="panouri-fotovoltaice" class="hero-img"/>
@@ -182,6 +182,8 @@
 
                     <button  type="button" class="btn btn--form" id="btn1">Calculează</button>
                     <button type="submit" class="btn btn--form">Trimite</button>
+
+                    <input type="hidden" name="_next" value="https://www.gwconsulting.ro/ro/node/449">
                 </form>
             </div>
             <div class="cta-image-box" role="img" aria-label="solar panel photo"></div>
@@ -265,9 +267,22 @@
     </div>
 
 </footer>
+
+<div class="cookie-container">
+    <p>
+        Acest site folosește cookie-uri pentru a îmbunătăți performanța și de a spori experiența utilizatorului care vizitează site-ul nostru.
+        <br>
+        Prin accesarea site-ului nostru, acceptați folosirea cookie-urilor. <a href="#">Pentru mai multe informații</a> 
+    </p>
+    <button class="cookie-btn">
+        Ok, sunt de acord
+    </button>
+</div>
+
 <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="./js/cookie.js"></script>
 <script src="./js/script.js"></script>
 <script src="./js/calculator.js"></script>
 <script src="./js/judete.js"></script>

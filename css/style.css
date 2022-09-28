@@ -390,3 +390,39 @@
 .footer-link:hover, .footer-link:active {
     color:#398D43;
 }
+
+.cookie-container {
+    font-size: 1.6rem;
+    position: fixed;;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background: #253952;
+    color: #F9F9F9;
+    padding:2rem 3rem ;
+    transition: 400ms;
+    line-height: 2.4rem;
+    box-shadow: 0 -2px 16px hsla(213, 38%, 23%, 0.137);
+}
+
+.cookie-container.active {
+    bottom: 0;
+}
+
+.cookie-container a{
+    color: #F9F9F9;
+}
+
+.cookie-container p {
+    padding-bottom: 1rem;
+}
+
+.cookie-btn {
+    background:#398D43;
+    border: none;
+    color: #F9F9F9;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border-radius: 8px;
+}
