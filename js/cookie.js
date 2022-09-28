@@ -12,4 +12,3 @@ setTimeout(() => {
   }
 }, 2000);
 
-console.log("cookieBannerDisplayed");
