@@ -8,7 +8,7 @@ function fun1() {
     out1.innerHTML = Math.round(consum.value / numar);
 }
 
-btn1.addEventListener('click', fun1);
+btn1.addEventListener('click', fun1 + unitate);
 
 
 

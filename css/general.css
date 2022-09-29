@@ -127,5 +127,18 @@ body {
     padding: 1.2rem;
 }
 
+.calculeaza {
+    background-color: #0C233F;
+}
+
+.calculeaza:hover {
+    background: none;
+    color: #243952	;
+    box-shadow:inset 0 0 0 2px #243952;
+}
+
+.trimite:hover {
+    background:none;
+}
 
 
