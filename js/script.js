@@ -27,8 +27,8 @@ const obs = new IntersectionObserver(function(entries){
 },
 {
     root: null,
-    threshold: 1,
-    rootMargin:'76px'
+    threshold: 0,
+    rootMargin:'-76px'
 }
 );
 
